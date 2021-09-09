@@ -1,0 +1,35 @@
+.header {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $width-tablet) {
+    padding: 20px 15px 0 15px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 40px 0 0;
+  }
+}
+
+.header__link-logo {
+  width: 48px;
+  height: 48px;
+  display: block;
+}
+
+.header__svg-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.header__link-menu {
+  width: 32px;
+  height: 32px;
+  display: block;
+  background: url("../img/stack.svg#icons--menu-icon") 50% 50% no-repeat;
+}

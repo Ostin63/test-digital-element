@@ -56,17 +56,7 @@ const images = () => src('source/img/**/*.{png,jpg}')
   .pipe(dest('build/img'));
 exports.images = images;
 
-const logo = () => src('source/img/logo/*.svg')
-  .pipe(svgsprite({
-    mode: {
-      stack: {},
-    },
-  }))
-  .pipe(rename('logo.svg'))
-  .pipe(dest('build/img'));
-exports.logo = logo;
-
-const svgstack = () => src('source/img/icons/**/*.svg')
+const svgstack = () => src('source/img/**/*.svg')
   .pipe(svgsprite({
     mode: {
       stack: {},
@@ -121,7 +111,6 @@ const build = series(
     styles,
     html,
     scripts,
-    logo,
     svgstack,
     images,
   ),
@@ -136,7 +125,6 @@ exports.default = series(
     styles,
     html,
     scripts,
-    logo,
     svgstack,
   ),
   series(

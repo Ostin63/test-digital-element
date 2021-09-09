@@ -1,3 +1,6 @@
+$width-tablet: 768px;
+$width-desktop: 1230px;
+
 $blue-01: #1f3f68;
 $blue-02: #316099;
 $blue-03: #356ead;
@@ -25,3 +28,6 @@ $gradient-blue: linear-gradient(183.81deg, $blue-06 -3.62%, $blue-08 88.96%);
 $gradient-red: linear-gradient(180deg, $red 0%, $red-dark 100%);
 $gradient-purple: linear-gradient(180deg, $purple 0%, $purple-dark 100%);
 $background: linear-gradient(0deg, $blue-05 8.84%, $white-00 31.12%);
+
+$font-gilroy: "Gilroy", "Arial", "sans-serif";
+$font-cormorant-garamond: "cormorant-garamond", "Roboto", "serif";
