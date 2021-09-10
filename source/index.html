@@ -106,6 +106,46 @@
     </div>
   </footer>
 
+  <div class="modal">
+    <div class="modal__wrapper">
+      <h3 class="modal__title">Send us a message</h3>
+      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="modal__form-wrapper-input">
+          <label class="modal__form-label" for="FullName">Full Name</label>
+          <input class="modal__form-input" type="text" id="FullName" name="FullName" placeholder="Your Name">
+        </div>
+        <div class="modal__form-wrapper-input">
+          <label class="modal__form-label" for="email">Email</label>
+          <input class="modal__form-input" type="email" id="email" name="email" placeholder="Your Email">
+        </div>
+        <div class="modal__form-wrapper-input modal__form-wrapper-input--textarea">
+          <label class="modal__form-label" for="textarea">Message</label>
+          <textarea class="modal__form-input modal__form-input--textarea" cols="30" rows="50" id="textarea" name="textarea"
+            placeholder="Your Message"></textarea>
+        </div>
+        <button class="modal__form-submit" type="submit">submit</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="alert">
+    <!-- Сообщение об успешном создании объявления -->
+    <template id="alert__success">
+      <div class="alert__success">
+        <p class="alert__success-message">Message sent</p>
+      </div>
+    </template>
+
+    <!-- Сообщение об ошибке при загрузке -->
+    <template id="alert__error-loading">
+      <div class="alert__error-loading">
+        <p class="alert__error-loading-messege">
+          An error occurred while loading data from the server :<br>( Refresh the page!)
+        </p>
+      </div>
+    </template>
+  </div>
+
 </body>
 
 </html>

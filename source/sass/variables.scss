@@ -8,13 +8,16 @@ $blue-04: #5a98d0;
 $blue-05: #98c3e8;
 $blue-06: #98d0fc;
 $blue-08: #3481d7;
-$blue-20: rgba(16, 112, 177, 0.2);
-$blue-60: rgba(100, 181, 246, 0.6);
+$blue-2: rgba(53, 110, 173, 0.2);
 $blue-20: rgba(31, 63, 104, 0.2);
+$blue-22: rgba(16, 112, 177, 0.2);
+$blue-52: rgba(31, 63, 104, 0.2);
+$blue-60: rgba(100, 181, 246, 0.6);
+$blue-95: rgba(249, 251, 252, 0.95);
 $white: #ffffff;
 $white-00: rgba(255, 255, 255, 0);
-$white-00: rgba(255, 255, 255, 0.1);
-$white-00: rgba(255, 255, 255, 0.5);
+$white-10: rgba(255, 255, 255, 0.1);
+$white-50: rgba(255, 255, 255, 0.5);
 $gray: #c4c4c4;
 $yellow-light: #fff8e1;
 $yellow: #ffcc80;
@@ -24,12 +27,15 @@ $purple: #af6ced;
 $purple-dark: #5e199d;
 
 $border-1: 1px solid $white;
+$border-3: 1px solid $blue-2;
 
 $shadow: 5px 20px 50px $blue-20;
 $shadow-20: 0 0 10px 10px $blue-20;
 $shadow-00: 0 0 10px 10px $white-00;
-$shadow-01: 0 0 5px 5px rgba(255, 255, 255, 0.1);
-$shadow-05: 0 0 3px 3px rgba(255, 255, 255, 0.5);
+$shadow-01: 0 0 5px 5px $white-10;
+$shadow-05: 0 0 3px 3px $white-50;
+$shadow-modal: 5px 10px 50px $blue-52;
+$filter-shadow: 5px 10px 20px $blue-22;
 
 $gradient-yellow: linear-gradient(238.37deg, $yellow-light 0.54%, $yellow 88.49%);
 $gradient-light-blue: linear-gradient(180.99deg, $white-00 6.19%, $blue-60 103.09%);
