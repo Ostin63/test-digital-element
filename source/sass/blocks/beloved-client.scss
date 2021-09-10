@@ -1,0 +1,122 @@
+.beloved-client {
+  background-color: $blue-04;
+  border-radius: 200px 0 0 0;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.beloved-client__wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 50px 15px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 270px 50px 1fr;
+    grid-template-rows: 95px 100px max-content;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 95px 0 554px;
+    grid-template-columns: 224px 96px 1fr;
+  }
+}
+
+.beloved-client__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 46px;
+  font-family: $font-gilroy;
+  letter-spacing: 0.05em;
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 46px;
+    text-align: left;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.beloved-client__text {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: $font-gilroy;
+  letter-spacing: 0.05em;
+  color: $white;
+  opacity: 0.6;
+
+  @media (min-width: $tablet-width) {
+    max-width: 540px;
+    margin: 0;
+    text-align: left;
+    grid-column: 3/-1;
+    grid-row: 1/2;
+  }
+}
+
+.beloved-client__list {
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-column: 1/-1;
+    grid-row: -2/-1;
+  }
+}
+
+.beloved-client__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 46px;
+  font-family: $font-gilroy;
+  letter-spacing: 0.02em;
+  color: $white;
+}
+
+.beloved-client__item {
+  width: 235px;
+  height: 128px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: $border-1;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    border: $border-1;
+    border-top: none;
+    border-right: none;
+
+    &:first-child,
+    &:nth-child(5) {
+      border-left: none;
+    }
+
+    &:nth-child(5),
+    &:nth-child(6),
+    &:nth-child(7),
+    &:nth-child(8) {
+      border-bottom: none;
+    }
+  }
+
+  &.active {
+    background: $blue-20;
+
+    .beloved-client__link {
+      text-transform: capitalize;
+    }
+  }
+}

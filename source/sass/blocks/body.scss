@@ -12,12 +12,12 @@
     grid-column: 1/-1;
     grid-row: 1/3;
 
-    @media (min-width: $width-desktop) {
+    @media (min-width: $tablet-width) {
       height: 768px;
     }
   }
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: $tablet-width) {
     &::after {
       width: 688px;
       height: 624px;

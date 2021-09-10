@@ -2,11 +2,13 @@
   height: 638px;
   padding: 50px 20px;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: $tablet-width) {
     width: 510px;
+    height: 680px;
+    padding: 100px 20px;
   }
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: $desktop-width) {
     width: 100%;
     padding: 0;
     display: grid;
@@ -24,12 +26,11 @@
   letter-spacing: 0.057em;
   color: $blue-01;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: $tablet-width) {
     text-align: left;
-    margin-top: 100px;
   }
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: $desktop-width) {
     grid-column: 2/3;
   }
 }
@@ -45,12 +46,12 @@
   color: $blue-01;
   opacity: 0.6;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 70px;
     text-align: left;
   }
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: $desktop-width) {
     grid-column: 2/3;
   }
 }
@@ -74,11 +75,20 @@
   box-shadow: $shadow;
   border-radius: 10px;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: $tablet-width) {
     margin: 0;
   }
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: $desktop-width) {
     grid-column: 2/3;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: $shadow-20;
+  }
+
+  &:active {
+    box-shadow: $shadow-00;
   }
 }
