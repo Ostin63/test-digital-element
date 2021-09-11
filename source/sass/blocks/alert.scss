@@ -17,8 +17,15 @@
 .alert__success-message,
 .alert__error-loading-messege {
   position: relative;
-
-  color: $white;
-  font-size: 50px;
+  color: $blue-01;
+  font-size: 40px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+  }
+}
+
+.alert__error-loading-messege {
+  color: $red;
 }

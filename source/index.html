@@ -63,25 +63,25 @@
           aliqua. Ut enim ad minim veniam.</p>
         <ul class="beloved-client__list">
           <li class="beloved-client__item">
-            <a href="#" class="beloved-client__link">LOGO CLIENT 1</a>
+            <a href="#" class="beloved-client__link">Logo client 1</a>
           </li>
           <li class="beloved-client__item">
-            <a href="#" class="beloved-client__link">LOGO CLIENT 2</a>
+            <a href="#" class="beloved-client__link">Logo client 2</a>
           </li>
           <li class="beloved-client__item">
-            <a href="#" class="beloved-client__link">LOGO CLIENT 3</a>
+            <a href="#" class="beloved-client__link">Logo client 3</a>
           </li>
           <li class="beloved-client__item">
-            <a href="#" class="beloved-client__link">LOGO CLIENT 4</a>
+            <a href="#" class="beloved-client__link">Logo client 4</a>
           </li>
           <li class="beloved-client__item">
-            <a href="#" class="beloved-client__link">LOGO CLIENT 5</a>
+            <a href="#" class="beloved-client__link">Logo client 5</a>
           </li>
           <li class="beloved-client__item">
-            <a href="#" class="beloved-client__link">LOGO CLIENT 6</a>
+            <a href="#" class="beloved-client__link">Logo client 6</a>
           </li>
           <li class="beloved-client__item">
-            <a href="#" class="beloved-client__link">LOGO CLIENT 7</a>
+            <a href="#" class="beloved-client__link">Logo client 7</a>
           </li>
           <li class="beloved-client__item active">
             <a href="#" class="beloved-client__link">More Client</a>
@@ -106,22 +106,25 @@
     </div>
   </footer>
 
+  <div class="overlay"></div>
+
   <div class="modal">
     <div class="modal__wrapper">
       <h3 class="modal__title">Send us a message</h3>
       <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="modal__form-wrapper-input">
           <label class="modal__form-label" for="FullName">Full Name</label>
-          <input class="modal__form-input" type="text" id="FullName" name="FullName" placeholder="Your Name">
+          <input class="modal__form-input modal__form-input--name" type="text" id="FullName" name="FullName" placeholder="Your Name"
+            minlength="2" required>
         </div>
         <div class="modal__form-wrapper-input">
           <label class="modal__form-label" for="email">Email</label>
-          <input class="modal__form-input" type="email" id="email" name="email" placeholder="Your Email">
+          <input class="modal__form-input modal__form-input--mail" type="email" id="email" name="email" placeholder="Your Email" required>
         </div>
         <div class="modal__form-wrapper-input modal__form-wrapper-input--textarea">
           <label class="modal__form-label" for="textarea">Message</label>
-          <textarea class="modal__form-input modal__form-input--textarea" cols="30" rows="50" id="textarea" name="textarea"
-            placeholder="Your Message"></textarea>
+          <textarea class="modal__form-input modal__form-input--textarea" cols="30" rows="50" id="textarea"
+            name="textarea" placeholder="Your Message"></textarea>
         </div>
         <button class="modal__form-submit" type="submit">submit</button>
       </form>
@@ -140,12 +143,13 @@
     <template id="alert__error-loading">
       <div class="alert__error-loading">
         <p class="alert__error-loading-messege">
-          An error occurred while loading data from the server :<br>( Refresh the page!)
+          Error while loading data in the server :<br>( Refresh the page!)
         </p>
       </div>
     </template>
   </div>
 
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

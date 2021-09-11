@@ -1,32 +1,24 @@
 .modal {
   position: fixed;
-  width: 100%;
-  height: 100%;
-  background: $blue-95;
-  display: none;
-
-  &.active {
-    display: block;
-  }
-}
-
-.modal__wrapper {
-  position: fixed;
   width: 290px;
-  height: 100%;
+  height: 800px;
   top: 0;
   left: calc(50% - 290px / 2);
   padding: 40px 20px;
   background: $white;
   box-shadow: $shadow-modal;
   border-radius: 10px;
+  display: none;
 
   @media (min-width: $tablet-width) {
     width: 540px;
-    height: 800px;
     top: 50px;
     left: calc(50% - 540px / 2);
     padding: 56px;
+  }
+
+  &.active {
+    display: block;
   }
 }
 
@@ -90,6 +82,15 @@
   }
 }
 
+input:valid:not(:placeholder-shown) {
+  border-color: $blue-01;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border-color: $red;
+}
+
+
 .modal__form-submit {
   width: 100%;
   height: 72px;
@@ -106,4 +107,13 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: $white;
+
+  &:hover,
+  &:focus {
+    box-shadow: $shadow-20;
+  }
+
+  &:active {
+    box-shadow: $shadow-00;
+  }
 }
